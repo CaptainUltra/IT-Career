@@ -1,6 +1,6 @@
 # IT-Career
 
-*Read this in [Bulgarian]() / Четете това на [български]()*
+*Read this in [Bulgarian](README.bg.md) / Четете това на [български](README.bg.md)*
 
 #### About the training:
 

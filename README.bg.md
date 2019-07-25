@@ -1,6 +1,6 @@
 # IT-Career
 
-*Read this in [English]() / Четете това на [английски]()*
+*Read this in [English](README.md) / Четете това на [английски](README.md)*
 
 #### За обучението:
 
