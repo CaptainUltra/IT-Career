@@ -6,14 +6,24 @@ namespace Skeleton.Tests
     [TestFixture]
     public class AxeTests
     {
+        private const int DummyHealth = 20;
+        private const int DummyXP = 20;
+        private const int AxeAttack = 2;
+        private const int AxeDurability = 2;
+        private Dummy dummy;
+        private Axe axe;
+        private Axe brokenAxe;
+
+        [SetUp]
+        public void SetUp()
+        {
+            this.dummy = new Dummy(DummyHealth, DummyXP);
+            this.axe = new Axe(AxeAttack, AxeDurability);
+        }
         //Test if axe loses durability affter attack
         [Test]
         public void AxeLosesDurabilityAfterAttack()
         {
-            //Arrange
-            Axe axe = new Axe(10, 10);
-            Dummy dummy = new Dummy(10, 10);
-
             //Act
             axe.Attack(dummy);
 
@@ -22,15 +32,16 @@ namespace Skeleton.Tests
 
             //Assert
             //Assert.That(actualresult, Is.EqualTo(expectedResult));
-            Assert.AreEqual(expectedResult, actualresult);
+            Assert.AreEqual(expectedResult, actualresult, "Axe doesn't lose durability after attack");
         }
 
         //Test attacking with a broken weapon
-        [Test]
-        public void BrokenAxeAttack()
+        [TestCase(12, 0)]
+        [TestCase(5, 0)]
+        [TestCase(10, -1)]
+        public void BrokenAxeAttack(int attackPoints, int durability)
         {
-            Dummy dummy = new Dummy(10, 10);
-            Axe axe = new Axe(10, 0);
+            this.brokenAxe = new Axe(attackPoints, durability);
 
             Assert.Throws<InvalidOperationException>(() => axe.Attack(dummy));
             //Assert.Throws(typeof(InvalidOperationException), () => axe.Attack(dummy));

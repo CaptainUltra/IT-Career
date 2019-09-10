@@ -6,12 +6,23 @@ namespace Skeleton.Tests
     [TestFixture]
     public class DummyTests
     {
+        private const int DummyHealth = 10;
+        private const int DeadDummyHealth = 0;
+        private const int DummyExperience = 10;
+        private Dummy dummy;
+        private Dummy deadDummy;
+
+        [SetUp]
+        public void SetUp()
+        {
+            this.dummy = new Dummy(DummyHealth, DummyExperience);
+            this.deadDummy = new Dummy(DeadDummyHealth, DummyExperience);
+        }
+
         //Test if dummy loses health after attack
         [Test]
         public void DummyLosesHealthAfterAttack()
         {
-            Dummy dummy = new Dummy(10, 10);
-            
             dummy.TakeAttack(5);
             var expectedResult = 5;
             var actualresult = dummy.Health;
@@ -24,19 +35,15 @@ namespace Skeleton.Tests
         [Test]
         public void DeadDummyThrowsException()
         {
-            Dummy dummy = new Dummy(0, 10);
-
-            Assert.That(() => dummy.TakeAttack(5), Throws.InvalidOperationException.With.Message.EqualTo("Dummy is dead."));
+            Assert.That(() => deadDummy.TakeAttack(5), Throws.InvalidOperationException.With.Message.EqualTo("Dummy is dead."));
         }
 
         //Test if dead dummy gives xp
         [Test]
         public void DeadDummyCanGiveXP()
         {
-            Dummy dummy = new Dummy(0, 10);
-
             var expectedResult = 10;
-            var actualResult = dummy.GiveExperience();
+            var actualResult = deadDummy.GiveExperience();
 
             Assert.AreEqual(expectedResult, actualResult);
         }
@@ -45,8 +52,6 @@ namespace Skeleton.Tests
         [Test]
         public void AliveDummyCanGiveXP()
         {
-            Dummy dummy = new Dummy(10, 15);
-
             Assert.Throws<InvalidOperationException>(() => dummy.GiveExperience());
         }
     }
