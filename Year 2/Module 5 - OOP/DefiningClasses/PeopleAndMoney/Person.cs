@@ -22,7 +22,7 @@ public class Person
     }
     public static int Count
     {
-        get{return count};
+        get{return count;}
     }
 
     public decimal GetBalance()
