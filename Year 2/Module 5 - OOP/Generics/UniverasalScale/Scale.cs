@@ -1,3 +1,5 @@
+using System;
+
 public class Scale<T>
     where T : IComparable<T>
 {

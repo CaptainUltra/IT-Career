@@ -6,15 +6,16 @@ namespace GenericArrayCreator
     {
         static void Main(string[] args)
         {
-            var arr = ArrayCreaator.create(5, "A");
+            var arr = ArrayCreator.create(5, "A");
         }
     }
     
-    public static class ArrayCreaator
+    public static class ArrayCreator
     {
-        public static T[] create(int lenght, T item)
+        public static T[] create<T>(int lenght, T item)
         {
-            return new T[lenght]; 
+            var arr = new T[lenght]; 
+            return arr;
         }
     }
 }
