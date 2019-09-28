@@ -1,19 +1,21 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 15
-VisualStudioVersion = 15.0.26124.0
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29123.88
 MinimumVisualStudioVersion = 15.0.26124.0
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MathOperations", "MathOperations\MathOperations.csproj", "{920C4903-B051-443E-BB72-C23DF1825843}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MathOperations", "MathOperations\MathOperations.csproj", "{920C4903-B051-443E-BB72-C23DF1825843}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Figures", "Figures\Figures.csproj", "{72416982-A285-4B78-AC19-88F5A03AFF57}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Figures", "Figures\Figures.csproj", "{72416982-A285-4B78-AC19-88F5A03AFF57}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Animal", "Animal\Animal.csproj", "{F83267F7-0A65-4139-82F3-0CB4C609918E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Animal", "Animal\Animal.csproj", "{F83267F7-0A65-4139-82F3-0CB4C609918E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AnimalKingdom2", "AnimalKingdom2\AnimalKingdom2.csproj", "{E2A7BB30-5E3E-4B2F-8BC3-8325610F12BC}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AnimalKingdom2", "AnimalKingdom2\AnimalKingdom2.csproj", "{E2A7BB30-5E3E-4B2F-8BC3-8325610F12BC}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Machine", "Machine\Machine.csproj", "{8961D89D-0992-45BB-A24E-1204DC14F4E6}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Machine", "Machine\Machine.csproj", "{8961D89D-0992-45BB-A24E-1204DC14F4E6}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Vehicles", "Vehicles\Vehicles.csproj", "{3BD7305E-E715-479F-80A6-338788A3429C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Vehicles", "Vehicles\Vehicles.csproj", "{3BD7305E-E715-479F-80A6-338788A3429C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WildFarm", "WildFarm\WildFarm.csproj", "{5C76699D-8C79-4D83-B7FC-47FDD51418E2}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -23,9 +25,6 @@ Global
 		Release|Any CPU = Release|Any CPU
 		Release|x64 = Release|x64
 		Release|x86 = Release|x86
-	EndGlobalSection
-	GlobalSection(SolutionProperties) = preSolution
-		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
 		{920C4903-B051-443E-BB72-C23DF1825843}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
@@ -100,5 +99,23 @@ Global
 		{3BD7305E-E715-479F-80A6-338788A3429C}.Release|x64.Build.0 = Release|Any CPU
 		{3BD7305E-E715-479F-80A6-338788A3429C}.Release|x86.ActiveCfg = Release|Any CPU
 		{3BD7305E-E715-479F-80A6-338788A3429C}.Release|x86.Build.0 = Release|Any CPU
+		{5C76699D-8C79-4D83-B7FC-47FDD51418E2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5C76699D-8C79-4D83-B7FC-47FDD51418E2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5C76699D-8C79-4D83-B7FC-47FDD51418E2}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{5C76699D-8C79-4D83-B7FC-47FDD51418E2}.Debug|x64.Build.0 = Debug|Any CPU
+		{5C76699D-8C79-4D83-B7FC-47FDD51418E2}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{5C76699D-8C79-4D83-B7FC-47FDD51418E2}.Debug|x86.Build.0 = Debug|Any CPU
+		{5C76699D-8C79-4D83-B7FC-47FDD51418E2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5C76699D-8C79-4D83-B7FC-47FDD51418E2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5C76699D-8C79-4D83-B7FC-47FDD51418E2}.Release|x64.ActiveCfg = Release|Any CPU
+		{5C76699D-8C79-4D83-B7FC-47FDD51418E2}.Release|x64.Build.0 = Release|Any CPU
+		{5C76699D-8C79-4D83-B7FC-47FDD51418E2}.Release|x86.ActiveCfg = Release|Any CPU
+		{5C76699D-8C79-4D83-B7FC-47FDD51418E2}.Release|x86.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {D67BDE70-4734-4C10-B70A-DC106025EA2F}
 	EndGlobalSection
 EndGlobal
