@@ -13,12 +13,11 @@ namespace Stealer
 
             var type = typeof(Hacker);
             var hackerInstance = Activator.CreateInstance(type);
-.000000000.0
             for (int i = 0; i < inputFields.Length; i++)
             {
                 var currentField = type.GetField(inputFields[i], BindingFlags.Public |
                  BindingFlags.Instance | BindingFlags.Static | BindingFlags.NonPublic);
-                var value = currentField.GetValue()
+                var value = currentField.GetValue();
             }
 
         }
