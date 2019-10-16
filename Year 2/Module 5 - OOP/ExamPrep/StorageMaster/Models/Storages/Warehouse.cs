@@ -5,7 +5,7 @@ namespace StorageMaster.Models.Storages
     {
         private const int WarehouseCapacity = 10;
         private const int WarehouseGarageSlots = 10;
-        private static readonly Vehicle[] WarehouseVehicles =
+        private static Vehicle[] WarehouseVehicles =
         {
             new Semi(),
             new Semi(),

@@ -1,9 +1,9 @@
 namespace StorageMaster.Models.Products
 {
-    public class SolidSateDrive : Product
+    public class SolidStateDrive : Product
     {
         private const double SolidSateDriveWeight = 0.2;
-        public SolidSateDrive(double price) 
+        public SolidStateDrive(double price) 
             : base(price, SolidSateDriveWeight) { }
     }
 }

@@ -15,6 +15,7 @@ namespace StorageMaster.Models.Storages
             this.Capacity = capacity;
             this.GarageSlots = garageSlots;
             this.garage = new Vehicle[this.GarageSlots];
+            this.products = new List<Product>();
             this.FillGarage(vehicles);
         }
 
@@ -33,6 +34,10 @@ namespace StorageMaster.Models.Storages
                 throw new InvalidOperationException("Invalid garage slot!");
             }
             Vehicle vehicle = this.garage[garageSlot];
+            if(vehicle == null)
+            {
+                throw new InvalidOperationException("No vehicle in this garage slot!");
+            }
             return vehicle;
         }
         public int SendVehicleTo(int garageSlot, Storage deliveryLocation)

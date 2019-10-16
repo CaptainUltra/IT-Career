@@ -32,8 +32,10 @@ namespace StorageMaster.Models.Vehicles
                 throw new InvalidOperationException("No products left in vehicle!");
             }
 
-            Product lastProduct = this.trunk.Last();
-            this.trunk.Remove(lastProduct);
+            /*Product lastProduct = this.trunk.Last();
+            this.trunk.Remove(lastProduct);*/
+            Product lastProduct = this.trunk[this.trunk.Count - 1];
+            this.trunk.RemoveAt(this.trunk.Count - 1);
 
             return lastProduct;
         }
