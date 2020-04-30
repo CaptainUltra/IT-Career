@@ -1,0 +1,30 @@
+﻿@model MusicApp.ViewModels.Song.IndexSongViewModel
+
+@{
+    ViewData["Title"] = "Home Page";
+}
+
+<h2 class="text-center">Your music here</h2>
+<div class="container">
+    <div class="justify-content-between">
+        @foreach (var song in Model.Songs)
+        {
+        <div class="col-md-4">
+            <h3>@string.Concat(song.Name.Substring(0, Math.Min(30, song.Name.Length)), song.Name.Length > 30 ? "..." : "")</h3>
+            <div>
+                <iframe width="300" height="200" src="@song.Link" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+            <p class="lead">
+                <a asp-route-id="@song.Id" asp-area="" asp-action="AddSongToPlaylist" asp-controller="Playlist" class="btn btn-primary" role="button">Add to playlist</a>
+            </p>
+            <p class="lead">
+                @song.CategoryName
+            </p>
+            <p class="lead text-nowrap">
+                @song.Description
+            </p>
+        </div>
+        }
+    </div>
+</div>
+
