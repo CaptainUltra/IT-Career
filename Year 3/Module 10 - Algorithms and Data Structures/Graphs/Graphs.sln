@@ -7,6 +7,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GraphTraversal_DFS-BFS", "G
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TopologicalSorting", "TopologicalSorting\TopologicalSorting.csproj", "{12E360AD-1CD1-4B7C-BBA1-A7B4655073D2}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PrimAlgorithm", "PrimAlgorithm\PrimAlgorithm.csproj", "{0E10A042-1101-4050-947C-3EA3406416A7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KruskalAlgorithm", "KruskalAlgorithm\KruskalAlgorithm.csproj", "{50CF62FF-5562-4145-AD3F-3ED14884D49B}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -44,5 +48,29 @@ Global
 		{12E360AD-1CD1-4B7C-BBA1-A7B4655073D2}.Release|x64.Build.0 = Release|Any CPU
 		{12E360AD-1CD1-4B7C-BBA1-A7B4655073D2}.Release|x86.ActiveCfg = Release|Any CPU
 		{12E360AD-1CD1-4B7C-BBA1-A7B4655073D2}.Release|x86.Build.0 = Release|Any CPU
+		{0E10A042-1101-4050-947C-3EA3406416A7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0E10A042-1101-4050-947C-3EA3406416A7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0E10A042-1101-4050-947C-3EA3406416A7}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{0E10A042-1101-4050-947C-3EA3406416A7}.Debug|x64.Build.0 = Debug|Any CPU
+		{0E10A042-1101-4050-947C-3EA3406416A7}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{0E10A042-1101-4050-947C-3EA3406416A7}.Debug|x86.Build.0 = Debug|Any CPU
+		{0E10A042-1101-4050-947C-3EA3406416A7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0E10A042-1101-4050-947C-3EA3406416A7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0E10A042-1101-4050-947C-3EA3406416A7}.Release|x64.ActiveCfg = Release|Any CPU
+		{0E10A042-1101-4050-947C-3EA3406416A7}.Release|x64.Build.0 = Release|Any CPU
+		{0E10A042-1101-4050-947C-3EA3406416A7}.Release|x86.ActiveCfg = Release|Any CPU
+		{0E10A042-1101-4050-947C-3EA3406416A7}.Release|x86.Build.0 = Release|Any CPU
+		{50CF62FF-5562-4145-AD3F-3ED14884D49B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{50CF62FF-5562-4145-AD3F-3ED14884D49B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{50CF62FF-5562-4145-AD3F-3ED14884D49B}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{50CF62FF-5562-4145-AD3F-3ED14884D49B}.Debug|x64.Build.0 = Debug|Any CPU
+		{50CF62FF-5562-4145-AD3F-3ED14884D49B}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{50CF62FF-5562-4145-AD3F-3ED14884D49B}.Debug|x86.Build.0 = Debug|Any CPU
+		{50CF62FF-5562-4145-AD3F-3ED14884D49B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{50CF62FF-5562-4145-AD3F-3ED14884D49B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{50CF62FF-5562-4145-AD3F-3ED14884D49B}.Release|x64.ActiveCfg = Release|Any CPU
+		{50CF62FF-5562-4145-AD3F-3ED14884D49B}.Release|x64.Build.0 = Release|Any CPU
+		{50CF62FF-5562-4145-AD3F-3ED14884D49B}.Release|x86.ActiveCfg = Release|Any CPU
+		{50CF62FF-5562-4145-AD3F-3ED14884D49B}.Release|x86.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
