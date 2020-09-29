@@ -3,9 +3,13 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.26124.0
 MinimumVisualStudioVersion = 15.0.26124.0
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SumOfCoins", "SumOfCoins\SumOfCoins.csproj", "{34CF978D-E55B-4E84-96DB-37553E27A7D2}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SumOfCoins", "SumOfCoins\SumOfCoins.csproj", "{34CF978D-E55B-4E84-96DB-37553E27A7D2}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ActivitySelection", "ActivitySelection\ActivitySelection.csproj", "{EF05DAF9-C197-450A-9E5F-65D416376CDC}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ActivitySelection", "ActivitySelection\ActivitySelection.csproj", "{EF05DAF9-C197-450A-9E5F-65D416376CDC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MagnetTape", "MagnetTape\MagnetTape.csproj", "{87B25EAA-2239-44AD-BBEC-D99DF808ADBC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MaxProfitJobsInTime", "MaxProfitJobsInTime\MaxProfitJobsInTime.csproj", "{8BA12153-22E1-4A3B-AB53-76BA6292639E}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,9 +19,6 @@ Global
 		Release|Any CPU = Release|Any CPU
 		Release|x64 = Release|x64
 		Release|x86 = Release|x86
-	EndGlobalSection
-	GlobalSection(SolutionProperties) = preSolution
-		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
 		{34CF978D-E55B-4E84-96DB-37553E27A7D2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
@@ -44,5 +45,35 @@ Global
 		{EF05DAF9-C197-450A-9E5F-65D416376CDC}.Release|x64.Build.0 = Release|Any CPU
 		{EF05DAF9-C197-450A-9E5F-65D416376CDC}.Release|x86.ActiveCfg = Release|Any CPU
 		{EF05DAF9-C197-450A-9E5F-65D416376CDC}.Release|x86.Build.0 = Release|Any CPU
+		{87B25EAA-2239-44AD-BBEC-D99DF808ADBC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{87B25EAA-2239-44AD-BBEC-D99DF808ADBC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{87B25EAA-2239-44AD-BBEC-D99DF808ADBC}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{87B25EAA-2239-44AD-BBEC-D99DF808ADBC}.Debug|x64.Build.0 = Debug|Any CPU
+		{87B25EAA-2239-44AD-BBEC-D99DF808ADBC}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{87B25EAA-2239-44AD-BBEC-D99DF808ADBC}.Debug|x86.Build.0 = Debug|Any CPU
+		{87B25EAA-2239-44AD-BBEC-D99DF808ADBC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{87B25EAA-2239-44AD-BBEC-D99DF808ADBC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{87B25EAA-2239-44AD-BBEC-D99DF808ADBC}.Release|x64.ActiveCfg = Release|Any CPU
+		{87B25EAA-2239-44AD-BBEC-D99DF808ADBC}.Release|x64.Build.0 = Release|Any CPU
+		{87B25EAA-2239-44AD-BBEC-D99DF808ADBC}.Release|x86.ActiveCfg = Release|Any CPU
+		{87B25EAA-2239-44AD-BBEC-D99DF808ADBC}.Release|x86.Build.0 = Release|Any CPU
+		{8BA12153-22E1-4A3B-AB53-76BA6292639E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8BA12153-22E1-4A3B-AB53-76BA6292639E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8BA12153-22E1-4A3B-AB53-76BA6292639E}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{8BA12153-22E1-4A3B-AB53-76BA6292639E}.Debug|x64.Build.0 = Debug|Any CPU
+		{8BA12153-22E1-4A3B-AB53-76BA6292639E}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{8BA12153-22E1-4A3B-AB53-76BA6292639E}.Debug|x86.Build.0 = Debug|Any CPU
+		{8BA12153-22E1-4A3B-AB53-76BA6292639E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8BA12153-22E1-4A3B-AB53-76BA6292639E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8BA12153-22E1-4A3B-AB53-76BA6292639E}.Release|x64.ActiveCfg = Release|Any CPU
+		{8BA12153-22E1-4A3B-AB53-76BA6292639E}.Release|x64.Build.0 = Release|Any CPU
+		{8BA12153-22E1-4A3B-AB53-76BA6292639E}.Release|x86.ActiveCfg = Release|Any CPU
+		{8BA12153-22E1-4A3B-AB53-76BA6292639E}.Release|x86.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {42494A57-45B0-4811-9F70-AB4433E56C59}
 	EndGlobalSection
 EndGlobal
