@@ -9,5 +9,7 @@ namespace MiniHTTPServer.HTTP.Exceptions
         private static string DefaultMessage = "The Request was malformed or contains unsupported elements.";
         public BadRequestException() : base(DefaultMessage)
         { }
+        public BadRequestException(string message) : base(message)
+        { }
     }
 }

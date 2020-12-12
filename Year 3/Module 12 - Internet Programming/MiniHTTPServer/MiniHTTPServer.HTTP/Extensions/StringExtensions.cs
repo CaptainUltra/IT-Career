@@ -1,4 +1,5 @@
-﻿using System;
+﻿using MiniHTTPServer.HTTP.Common;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -9,6 +10,8 @@ namespace MiniHTTPServer.HTTP.Extensions
     {
         public static string Capitalize(this string obj)
         {
+            CoreValidator.ThrowIfNullOrEmpty(obj, nameof(obj));
+
             var firstChar = obj[0];
             var remainingStr = obj.Substring(1);
 
