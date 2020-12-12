@@ -29,13 +29,27 @@ namespace MiniHTTPServer.HTTP.Responses
         public void AddHeader(HttpHeader header)
         {
             CoreValidator.ThrowIfNull(header, nameof(header));
-            this.Headers.Add(header);
+            this.Headers.AddHeader(header);
         }
 
         public byte[] GetBytes()
         {
-            byte[] response = Encoding.ASCII.GetBytes(this.ToString() + this.Content);
-            return response;
+            byte[] upperResponse = Encoding.UTF8.GetBytes(this.ToString());
+            byte[] lowerResponse = this.Content;
+
+            byte[] totalResponse = new byte[upperResponse.Length + lowerResponse.Length];
+
+            for (int i = 0; i < upperResponse.Length; i++)
+            {
+                totalResponse[i] = upperResponse[i];
+            }
+
+            for (int i = upperResponse.Length; i < totalResponse.Length; i++)
+            {
+                totalResponse[i] = lowerResponse[i - upperResponse.Length];
+            }
+
+            return totalResponse;
         }
         public override string ToString()
         {
@@ -43,7 +57,7 @@ namespace MiniHTTPServer.HTTP.Responses
 
             result.Append($"{GlobalConstants.HttpOneProtocolFragment} {(int)this.StatusCode} {this.StatusCode.ToString()}")
                 .Append(GlobalConstants.HttpNewLine)
-                .Append(this.Headers)
+                .Append(this.Headers.ToString())
                 .Append(GlobalConstants.HttpNewLine);
 
             result.Append(GlobalConstants.HttpNewLine);

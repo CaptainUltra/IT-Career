@@ -10,7 +10,7 @@ using System.Text;
 
 namespace MiniHTTPServer.HTTP.Requests
 {
-    class HttpRequest : IHttpRequest
+    public class HttpRequest : IHttpRequest
     {
         public HttpRequest(string requestString)
         {
@@ -49,7 +49,7 @@ namespace MiniHTTPServer.HTTP.Requests
             this.ParseRequestPath();
 
             this.ParseHeaders(splitRequest.Skip(1).ToArray());
-            this.ParseCookies();
+            //this.ParseCookies();
 
             this.ParseRequestParameters(splitRequest[splitRequest.Length -1]);
         }
@@ -91,7 +91,7 @@ namespace MiniHTTPServer.HTTP.Requests
         }
         private void ParseRequestUrl(string[] requestLine)
         {
-            this.Url = requestLine[2];
+            this.Url = requestLine[1];
         }
         private void ParseRequestPath()
         {
@@ -104,7 +104,7 @@ namespace MiniHTTPServer.HTTP.Requests
                 if (String.IsNullOrEmpty(item)) continue;
                 var headerString = item.Split(": ", StringSplitOptions.RemoveEmptyEntries);
 
-                this.Headers.Add(new HttpHeader(headerString[0], headerString[1]));
+                this.Headers.AddHeader(new HttpHeader(headerString[0], headerString[1]));
             }
         }
         private void ParseCookies()

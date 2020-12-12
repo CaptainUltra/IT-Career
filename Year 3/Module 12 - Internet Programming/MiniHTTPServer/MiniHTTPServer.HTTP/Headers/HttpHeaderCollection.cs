@@ -11,6 +11,7 @@ namespace MiniHTTPServer.HTTP.Headers
         {
             this.headers = new Dictionary<string, HttpHeader>();
         }
+
         public void AddHeader(HttpHeader header)
         {
             this.headers.Add(header.Key, header);
@@ -27,7 +28,7 @@ namespace MiniHTTPServer.HTTP.Headers
         }
         public override string ToString()
         {
-            return String.Join("/r/n", this.headers);
+            return String.Join("/r/n", this.headers.Values);
         }
     }
 }

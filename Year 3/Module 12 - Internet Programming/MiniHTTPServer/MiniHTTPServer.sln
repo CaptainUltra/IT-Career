@@ -3,9 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.30517.126
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MiniHTTPServer.HTTP", "MiniHTTPServer.HTTP\MiniHTTPServer.HTTP.csproj", "{087F56E2-4357-4E87-87C0-1147D0B510A9}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MiniHTTPServer.HTTP", "MiniHTTPServer.HTTP\MiniHTTPServer.HTTP.csproj", "{087F56E2-4357-4E87-87C0-1147D0B510A9}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MiniHTTPServer.WebServer", "MiniHTTPServer.WebServer\MiniHTTPServer.WebServer.csproj", "{99A011D7-C840-49B6-8D94-B05FEE311BC9}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MiniHTTPServer.WebServer", "MiniHTTPServer.WebServer\MiniHTTPServer.WebServer.csproj", "{99A011D7-C840-49B6-8D94-B05FEE311BC9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MiniHTTPServer.Demo", "MiniHTTPServer.Demo\MiniHTTPServer.Demo.csproj", "{DEBE44C2-8A46-4DFD-9BA9-F6ED19680FAA}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,6 +23,10 @@ Global
 		{99A011D7-C840-49B6-8D94-B05FEE311BC9}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{99A011D7-C840-49B6-8D94-B05FEE311BC9}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{99A011D7-C840-49B6-8D94-B05FEE311BC9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DEBE44C2-8A46-4DFD-9BA9-F6ED19680FAA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DEBE44C2-8A46-4DFD-9BA9-F6ED19680FAA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DEBE44C2-8A46-4DFD-9BA9-F6ED19680FAA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DEBE44C2-8A46-4DFD-9BA9-F6ED19680FAA}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

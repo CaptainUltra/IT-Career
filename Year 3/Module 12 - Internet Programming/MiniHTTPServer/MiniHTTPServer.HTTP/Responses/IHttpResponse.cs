@@ -6,7 +6,7 @@ using System.Text;
 
 namespace MiniHTTPServer.HTTP.Responses
 {
-    interface IHttpResponse
+    public interface IHttpResponse
     {
         HttpResponseStatusCode StatusCode { get; set; }
         IHttpHeaderCollection Headers { get; }

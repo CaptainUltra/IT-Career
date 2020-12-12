@@ -1,11 +1,13 @@
 <Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
+    <OutputType>Exe</OutputType>
     <TargetFramework>netcoreapp3.1</TargetFramework>
   </PropertyGroup>
 
   <ItemGroup>
     <ProjectReference Include="..\MiniHTTPServer.HTTP\MiniHTTPServer.HTTP.csproj" />
+    <ProjectReference Include="..\MiniHTTPServer.WebServer\MiniHTTPServer.WebServer.csproj" />
   </ItemGroup>
 
 </Project>

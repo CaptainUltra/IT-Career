@@ -9,6 +9,5 @@ namespace MiniHTTPServer.HTTP.Headers
         void AddHeader(HttpHeader header);
         bool ContainsHeader(string key);
         HttpHeader GetHeader(string key);
-        void Add(HttpHeader header);
     }
 }
