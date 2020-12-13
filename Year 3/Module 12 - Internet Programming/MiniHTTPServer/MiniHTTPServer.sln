@@ -7,7 +7,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MiniHTTPServer.HTTP", "Mini
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MiniHTTPServer.WebServer", "MiniHTTPServer.WebServer\MiniHTTPServer.WebServer.csproj", "{99A011D7-C840-49B6-8D94-B05FEE311BC9}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MiniHTTPServer.Demo", "MiniHTTPServer.Demo\MiniHTTPServer.Demo.csproj", "{DEBE44C2-8A46-4DFD-9BA9-F6ED19680FAA}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MiniHTTPServer.Demo", "MiniHTTPServer.Demo\MiniHTTPServer.Demo.csproj", "{DEBE44C2-8A46-4DFD-9BA9-F6ED19680FAA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MiniHTTPServer.IRunes", "MiniHTTPServer.IRunes\MiniHTTPServer.IRunes.csproj", "{02F4BB8C-ED7D-4A06-804A-408ECFB8C9BD}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -27,6 +29,10 @@ Global
 		{DEBE44C2-8A46-4DFD-9BA9-F6ED19680FAA}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{DEBE44C2-8A46-4DFD-9BA9-F6ED19680FAA}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{DEBE44C2-8A46-4DFD-9BA9-F6ED19680FAA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{02F4BB8C-ED7D-4A06-804A-408ECFB8C9BD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{02F4BB8C-ED7D-4A06-804A-408ECFB8C9BD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{02F4BB8C-ED7D-4A06-804A-408ECFB8C9BD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{02F4BB8C-ED7D-4A06-804A-408ECFB8C9BD}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
